@@ -1,0 +1,67 @@
+
+.ReactModalPortal .ReactModal__Overlay--after-open{
+    background-color: rgba(0, 0, 0, 0.45)!important;
+    opacity:1;
+}
+
+.modal{
+    background: white;
+    display: grid;
+    grid-template-rows: 7rem auto 5rem; 
+    grid-template-areas: 
+    "title"
+    "img"
+    "btn";
+    place-items: start center;
+    height: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+    outline: 0;
+    
+    @media(min-width:850px){
+        position: relative;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width: 25rem;
+        height: 25rem;
+        border-radius: 1rem;
+        grid-template-rows: 6rem auto; 
+        grid-template-areas: 
+        "title btn"
+        "img img";
+    }
+}
+
+.modal__title{
+    grid-area: title;
+    color:$dark;
+    letter-spacing: 1.5px;
+    margin: 0 5rem 5rem 5rem;
+    order:1;
+
+    @media(min-width:850px){
+        margin: 0 2rem 2rem 2rem;
+        justify-self: start;
+        
+    }
+
+}
+
+.modal__img {
+    grid-area: img;
+    width: auto;
+}
+
+.modal__btn{
+    grid-area: btn;
+    color:lightgray;
+    outline: 0;
+
+    @media(min-width:850px){
+        justify-self: end;
+    }
+
+}
+
+

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f3756), to(#141539));
+  background: linear-gradient(#1f3756, #141539);
+  color: white;
+  font-size: 14px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.scorePanel {
+  border: solid #606e85 5px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.scorePanel h1 {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.scorePanel div {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  background-color: white;
+  width: 7rem;
+  padding: .4rem 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.scorePanel div p {
+  color: #2a46c0;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.scorePanel div h2 {
+  color: #3b4363;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.container {
+  padding: 2rem;
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin: 2rem auto;
+  }
+}
+
+.game__options {
+  margin: 3rem auto;
+  background: url(../../images/bg-triangle.svg) no-repeat center;
+  background-size: 20rem;
+  height: 20rem;
+  width: 30rem;
+  position: relative;
+}
+
+.game__options #paper {
+  background-color: white;
+  border: solid #4865f4 10px;
+  border-radius: 50%;
+  padding: 1.6rem 2rem;
+  position: absolute;
+  left: 4rem;
+}
+
+.game__options #rock {
+  background-color: white;
+  border: solid #dc2e4e 10px;
+  border-radius: 50%;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.game__options #scissors {
+  background-color: white;
+  border: solid #ec9e0e 10px;
+  border-radius: 50%;
+  padding: 1.6rem 2rem;
+  position: absolute;
+  right: 4rem;
+}
+
+.game__house {
+  margin: 3rem auto;
+  width: 35rem;
+}
+
+.game__house_icons {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+.game__house_icons p {
+  letter-spacing: 3px;
+}
+
+.game__house_icons img {
+  background-color: white;
+  border: solid #dc2e4e 10px;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.game__result {
+  text-align: center;
+}
+
+.game__result p {
+  font-size: 2rem;
+  margin: .2rem;
+}
+
+.game__result button {
+  background-color: white;
+  padding: .3rem 3rem;
+  letter-spacing: 3px;
+  color: #2a46c0;
+}
+/*# sourceMappingURL=styles.css.map */
